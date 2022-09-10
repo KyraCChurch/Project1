@@ -1,9 +1,12 @@
-body {
-    background-image: url(https://64.media.tumblr.com/dda5e7bbccfbd82c40a5dbe0faf89584/tumblr_ommw33NtJJ1vg9wr5o1_500.gif);
+body{
+    background: rgb(216, 219, 184);
+    background-image: url(https://i.im.ge/2022/09/11/O4cgNy.210fb8977200036036103eceb02fa4ae.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100%;
     min-width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 h1{
     color: rgba(50, 178, 174, 1);
@@ -14,7 +17,6 @@ h1{
 }
 #start{
     color: rgba(50, 178, 174, 1);
-    border: 3px solid white;
     border-radius: 3px;
     position:absolute; 
     margin-left:-50px;
@@ -23,15 +25,35 @@ h1{
     font-size: 30px;
     font-family: 'Poor Story', cursive;
 }
-
 .storyStart{
-    background-image: url(https://64.media.tumblr.com/dda5e7bbccfbd82c40a5dbe0faf89584/tumblr_ommw33NtJJ1vg9wr5o1_500.gif);
     display: none;
 }
-.storyStart.h2{
+h2{
     color: rgba(50, 178, 174, 1);
-    font-size: 100px;
+    font-size: 50px;
     text-align: center;
     -webkit-text-stroke: 1px white;
     font-family: 'Poor Story', cursive;
+    background: rgba(50, 178, 174, 1);
+    border-radius: 5px;
+    border: 8px white;
 }
+#next{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    position:absolute; 
+    margin-left:-50px;
+    left:50%;
+    bottom:40px;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+}
+.rock {
+    display: none;
+    margin: 20px;
+    width: 400px;
+    transform-origin: center bottom;
+    position: fixed; 
+    top: 40%;
+    left: 35%;
+  }
