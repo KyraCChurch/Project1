@@ -8,11 +8,17 @@ body{
     position: absolute;
     bottom: 0;
 }
+.reset{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px; 
+    font-size: 20px;
+    font-family: 'Poor Story', cursive;
+}
 h1{
     color: rgba(50, 178, 174, 1);
     font-size: 100px;
     text-align: center;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px black;
     font-family: 'Poor Story', cursive;
 }
 #start{
@@ -32,7 +38,7 @@ h2{
     color: rgba(50, 178, 174, 1);
     font-size: 50px;
     text-align: center;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px Black;
     font-family: 'Poor Story', cursive;
     background: rgba(50, 178, 174, 1);
     border-radius: 5px;
