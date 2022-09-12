@@ -7,23 +7,6 @@ restart.addEventListener('click', (evt) => {
     rock.style.display = "none";
 });
 
-//Story text
-class storyText {
-    constructor(text){
-    this.text = text; 
-    }
-};
-
-const storyTexts = [
-new storyText('There once was a pet rock...'),
-new storyText('He lived in the window and watched the days go by.'),
-new storyText('But one day he '),
-new storyText('blah'),
-new storyText('blaj'),
-new storyText('blah'),
-new storyText('blah')
-];
-
 //Start Button
 const startBtn = document.querySelector('#start');
 const startPage = document.querySelector('.startPg');
@@ -38,9 +21,19 @@ startBtn.addEventListener('click', (evt) => {
 
 //Story Start
 const storyPt1 = document.querySelector('.storyStart');
-const nextBtn = document.querySelector('#next')
-nextBtn.addEventListener('click', (evt) => {
+const nextBtn = document.querySelector('.next')
+const prevBtn = document.querySelector('.prev')
+const firstStory = document.querySelector('#firstPt')
+let currentStryIndex = 0
+let previousStryIndex = 0
 
-    })
+nextBtn.addEventListener('click', (evt) => {
+    firstStory.style.display = 'block';
+    firstStory.style.display = 'none';
+    var elems = document.getElementsByClassName('.story');
+    for (var i=0;i<elems.length;i+=5){
+      elems[i].style.display = 'block';
+    }
+})
 
 

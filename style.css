@@ -44,12 +44,22 @@ h2{
     border-radius: 5px;
     border: 8px white;
 }
-#next{
+.next{
     color: rgba(50, 178, 174, 1);
     border-radius: 3px;
     position:absolute; 
     margin-left:-50px;
-    left:50%;
+    left:60%;
+    bottom:40px;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+}
+.prev{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    position:absolute; 
+    margin-left:-50px;
+    left:40%;
     bottom:40px;
     font-size: 30px;
     font-family: 'Poor Story', cursive;
@@ -63,3 +73,23 @@ h2{
     top: 40%;
     left: 35%;
   }
+.story{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    left:20%;
+    top: 20%;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+    display: none;
+}
+/* #firstPt{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    position:absolute; 
+    margin-left:-50px;
+    left:40%;
+    bottom:40px;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+    display: none;
+} */
