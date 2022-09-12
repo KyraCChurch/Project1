@@ -1,3 +1,29 @@
+//general
+const rock = document.querySelector('.rock');
+const restart = document.querySelector('.reset');
+restart.addEventListener('click', (evt) => {
+    startPage.style.display = "block";
+    storyPt1.style.display = "none";
+    rock.style.display = "none";
+});
+
+//Story text
+class storyText {
+    constructor(text){
+    this.text = text; 
+    }
+};
+
+const storyTexts = [
+new storyText('There once was a pet rock...'),
+new storyText('He lived in the window and watched the days go by.'),
+new storyText('But one day he '),
+new storyText('blah'),
+new storyText('blaj'),
+new storyText('blah'),
+new storyText('blah')
+];
+
 //Start Button
 const startBtn = document.querySelector('#start');
 const startPage = document.querySelector('.startPg');
@@ -17,11 +43,4 @@ nextBtn.addEventListener('click', (evt) => {
 
     })
 
-//general
-const rock = document.querySelector('.rock');
-const restart = document.querySelector('.reset');
-restart.addEventListener('click', (evt) => {
-    startPage.style.display = "block";
-    storyPt1.style.display = "none";
-    rock.style.display = "none";
-});
+
