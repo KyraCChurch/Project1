@@ -82,14 +82,18 @@ h2{
     font-family: 'Poor Story', cursive;
     display: none;
 }
-/* #firstPt{
+#firstPt{
     color: rgba(50, 178, 174, 1);
     border-radius: 3px;
-    position:absolute; 
-    margin-left:-50px;
-    left:40%;
-    bottom:40px;
+    left:20%;
+    top: 20%;
     font-size: 30px;
     font-family: 'Poor Story', cursive;
     display: none;
-} */
+}
+#gameBtn1{
+    /* display: none; */
+}
+.gameStart1{
+    display: none;
+}
