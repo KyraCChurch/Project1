@@ -93,7 +93,19 @@ h2{
 }
 #gameBtn1{
     /* display: none; */
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    position:absolute; 
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
 }
 .gameStart1{
+    display: none;
+}
+#firefly{
+    background-color: transparent;
+    border-radius: 150px;
+    display: block;
+    position: absolute;
     display: none;
 }

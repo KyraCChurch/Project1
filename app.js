@@ -54,12 +54,60 @@ nextBtn.addEventListener('click', (nextStory) => {
 const gameBtn1 = document.querySelector('#gameBtn1')
 const game1 = document.querySelector('.gameStart1')
 gameBtn1.addEventListener('click', (evt) => {
-    // firstStory.style.display = 'none';
     rock.style.display = "none";
     game1.style.display = 'block';
+    setTimeout(() => {
+        game1.style.display = 'none';
+      }, 1500)
     gameBtn1.style.display = "none";
     document.body.style.backgroundImage = `url(${backgroundImages[1]})`;
     document.body.style.backgroundColor = 'rgba(34, 30, 72, 1)';
+    fireflyAppear;
 });
+// First game 
+const fireflies = document.querySelector('#firefly')
+// fireflies.addEventListener('click', (evt) => {
+// setTimeout(() => {
+//     fireflies.style.display = 'none';
+//   }, Math.floor(Math.random() * (4000-1500) + 1500))
+// });
+function fireflyAppear()
+    {
+    //   document.getElementById('firefly').style.display ='none'; //first hide the button
+      setTimeout(function(){ //using setTimeout function
+      document.getElementById('firefly').style.display ='block'; //displaying the button again after 3000ms or 3 seconds
+    }
+    ,3000); 
+    }
+    
 
 
+
+
+
+
+
+
+
+// const minTime = 1000;
+// const maxTime = 4000;
+// let msSinceClicked = 0;
+
+// let waiting = false;
+// fireflies.addEventListener("click", newPose)
+// function newPose() {
+//     //Makes button appear at random time between 1000 and 4000 ms.
+//     const appear = Math.floor(Math.random() * (maxTime - minTime + minTime));
+//     setTimeout(() => {
+//         fireflies.style.display = 'none';
+//         waiting = true;
+//     }, appear);
+// }
+// fireflies.addEventListener("click", () => {
+//     if (waiting) {
+//         const score = 1000 - msSinceClicked;
+//         waiting = false;
+//     }else {
+//         newPose();
+//     }
+// })
