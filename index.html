@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Rock Goes on an Adventure</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
     <button class="reset">Restart</button>
@@ -18,26 +18,48 @@
     <button id="start">Start Game</button>
     </div>
     <div class="storyStart">
-    <button class="next">Next</button>
-    <button class="prev">Prev</button>
-    </div>
     <div class="rockPic">
         <img src="https://i.im.ge/2022/09/11/O4g290.Untitled-09-08-2022-12-54-56.png" alt="Pet Rock" class="rock">
     </div>
-    <div id="storyTexts">
-        <h2 class="story" id="firstPt">There once was a pet rock...</h2>
-        <h2 class="story">He lived in the window and watched the days go by.</h2>
-        <h2 class="story">But one day he</h2>
-        <h2 class="story">j</h2>
-        <h2 class="story">k</h2>
-        <h2 class="story">a</h2>
+    <div class="storyCarousel">
+        <div class="story story--visible">
+          <h2>There once was a pet rock...</h2>
+        </div>
+        <div class="story">
+          <h2>He lived in the window and watched the days go by.</h2>
+        </div>
+        <div class="story">
+          <h2>But one day he wanted an adventure!</h2>
+        </div>
+        <div class="story">
+            <h2>So he called on the wizard rock to ask for help.</h2>
+        </div>
+        <div class="story dialog">
+            <h2>"Dear Wizard Rock, I am bored of this wondow and want an adventure. Please help me!"</h2>
+        </div>
+
+            <button id="next">Next</button>
+            <button id="prev">Prev</button>
+        </div>
+    </div>
+    <div class="death">
+        Oh no! Pet rock didn't make it out of the forest.
     </div>
     <button id="gameBtn1">Start</button>
     <div class="gameStart1">
         <h1>Catch the Fireflies!</h1>
     </div>
+    <div class="fireflies">
         <button id="firefly">
             <img src="https://i.im.ge/2022/09/14/1oTspF.Untitled-09-13-2022-05-28-44.png">
         </button>
+        <button id="firefly">
+            <img src="https://i.im.ge/2022/09/14/1oTspF.Untitled-09-13-2022-05-28-44.png">
+        </button>
+        <button id="firefly">
+            <img src="https://i.im.ge/2022/09/14/1oTspF.Untitled-09-13-2022-05-28-44.png">
+        </button>
+    </div>
+    <script defer src="app.js"></script>
 </body>
 </html>

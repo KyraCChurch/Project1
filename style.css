@@ -31,9 +31,6 @@ h1{
     font-size: 30px;
     font-family: 'Poor Story', cursive;
 }
-.storyStart{
-    display: none;
-}
 h2{
     color: rgba(50, 178, 174, 1);
     font-size: 50px;
@@ -44,26 +41,6 @@ h2{
     border-radius: 5px;
     border: 8px white;
 }
-.next{
-    color: rgba(50, 178, 174, 1);
-    border-radius: 3px;
-    position:absolute; 
-    margin-left:-50px;
-    left:60%;
-    bottom:40px;
-    font-size: 30px;
-    font-family: 'Poor Story', cursive;
-}
-.prev{
-    color: rgba(50, 178, 174, 1);
-    border-radius: 3px;
-    position:absolute; 
-    margin-left:-50px;
-    left:40%;
-    bottom:40px;
-    font-size: 30px;
-    font-family: 'Poor Story', cursive;
-}
 .rock {
     display: none;
     margin: 20px;
@@ -73,24 +50,6 @@ h2{
     top: 40%;
     left: 35%;
   }
-.story{
-    color: rgba(50, 178, 174, 1);
-    border-radius: 3px;
-    left:20%;
-    top: 20%;
-    font-size: 30px;
-    font-family: 'Poor Story', cursive;
-    display: none;
-}
-#firstPt{
-    color: rgba(50, 178, 174, 1);
-    border-radius: 3px;
-    left:20%;
-    top: 20%;
-    font-size: 30px;
-    font-family: 'Poor Story', cursive;
-    display: none;
-}
 #gameBtn1{
     /* display: none; */
     color: rgba(50, 178, 174, 1);
@@ -109,3 +68,63 @@ h2{
     position: absolute;
     display: none;
 }
+.death{
+    display: none;
+}
+.storyStart{
+    display: none;
+}
+/* The story Carousel */
+.firstPt{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    left:20%;
+    top: 20%;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+    display: none;
+}
+#next{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    position:absolute; 
+    margin-left:-50px;
+    left:60%;
+    bottom:40px;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+}
+#prev{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    position:absolute; 
+    margin-left:-50px;
+    left:40%;
+    bottom:40px;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+}
+  .story,
+  .story--hidden{
+    display: none;
+  }
+  .storyCarousel .story--visible{
+    display: block;
+  }
+  
+  .story{
+      color: rgba(50, 178, 174, 1);
+      border-radius: 3px;
+      left:20%;
+      top: 20%;
+      font-size: 30px;
+      font-family: 'Poor Story', cursive;
+  }
+  .dialog{
+    color: rgba(141, 168, 183, 0.96);
+      border-radius: 10px;
+      left:20%;
+      top: 20%;
+      font-size: 30px;
+      font-family: 'Rock Salt', cursive;
+  }
