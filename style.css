@@ -31,16 +31,6 @@ h1{
     font-size: 30px;
     font-family: 'Poor Story', cursive;
 }
-h2{
-    color: rgba(50, 178, 174, 1);
-    font-size: 50px;
-    text-align: center;
-    -webkit-text-stroke: 1px Black;
-    font-family: 'Poor Story', cursive;
-    background: rgba(50, 178, 174, 1);
-    border-radius: 5px;
-    border: 8px white;
-}
 .rock {
     display: none;
     margin: 20px;
@@ -50,6 +40,15 @@ h2{
     top: 40%;
     left: 35%;
   }
+  #WizardRockPic{
+    /* display: none; */
+    margin: 20px;
+    width: 400px;
+    transform-origin: center bottom;
+    position: fixed; 
+    top: 60%;
+    left: 20%;
+}
 #gameBtn1{
     /* display: none; */
     color: rgba(50, 178, 174, 1);
@@ -112,19 +111,33 @@ h2{
     display: block;
   }
   
-  .story{
-      color: rgba(50, 178, 174, 1);
-      border-radius: 3px;
+  .narator{
+    color: rgba(50, 178, 174, 1);
+    font-size: 30px;
+    text-align: center;
+    -webkit-text-stroke: 1px Black;
+    font-family: 'Poor Story', cursive;
+    background: rgba(50, 178, 174, 1);
+    border-radius: 5px;
+  }
+  .rockDialog{
+    background: rgba(141, 168, 183, 0.96);
+      color: white;
+      border-radius: 10px;
       left:20%;
       top: 20%;
-      font-size: 30px;
-      font-family: 'Poor Story', cursive;
+      font-size: 20px;
+      font-family: 'Rock Salt', cursive;
+      text-align: center;
   }
-  .dialog{
-    color: rgba(141, 168, 183, 0.96);
+  .wizardDialog{
+    background: rgba(109, 30, 151, 0.8);
+      color: white;
       border-radius: 10px;
       left:20%;
       top: 20%;
       font-size: 30px;
-      font-family: 'Rock Salt', cursive;
+      text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
   }
+ 
