@@ -32,10 +32,18 @@ const prevBtn = document.querySelector('#prev')
 let storyPosition = 0;
 const story = document.getElementsByClassName('story')
 const totalTexts = story.length;
-
+const wizRock = document.querySelector('#wizardRockPic')
+const poof = document.querySelector('#poof')
 
 document.getElementById('next').addEventListener('click', function() {
   moveToNextStory();
+  if (storyPosition === 6){
+    wizRock.style.display = 'block';
+    poof.style.display = 'block';
+  } 
+  if (storyPosition === 7){
+    poof.style.display = 'none';
+  }
 })
 document.getElementById('prev').addEventListener('click', function() {
   moveToPrevStory();
