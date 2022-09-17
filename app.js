@@ -4,13 +4,15 @@ const backgroundImages = [
     "https://cdna.artstation.com/p/assets/images/images/015/690/214/original/daniel-gianino-fairy-forest1.gif?1549276717"
 ]
 const rock = document.querySelector('.rock');
+const wizRock = document.querySelector('#wizardRockPic')
 const restart = document.querySelector('.reset');
+const poof = document.querySelector('#poof')
 restart.addEventListener('click', (evt) => {
     startPage.style.display = "block";
-    storyPt1.style.display = "none";
-    rock.style.display = "none";
-    firstStory.style.display = 'none';
-    game1.style.display = 'none';
+    document.body.style.backgroundImage = `url(${backgroundImages[0]})`;
+    rock.style.display = 'none';
+    // storyPt1.style.display = "none";
+    // game1.style.display = 'none';
 });
 const deathScreen = document.querySelector('.death');
 //Start Button
@@ -25,15 +27,14 @@ startBtn.addEventListener('click', (evt) => {
     rock.style.display = 'block';
 })
 
-// Story Start
+// Story 
 const storyPt1 = document.querySelector('.storyStart');
 const nextBtn = document.querySelector('#next')
 const prevBtn = document.querySelector('#prev')
 let storyPosition = 0;
 const story = document.getElementsByClassName('story')
 const totalTexts = story.length;
-const wizRock = document.querySelector('#wizardRockPic')
-const poof = document.querySelector('#poof')
+const storyCarousel = document.querySelector('#storyCarousel')
 
 document.getElementById('next').addEventListener('click', function() {
   moveToNextStory();
@@ -43,6 +44,11 @@ document.getElementById('next').addEventListener('click', function() {
   } 
   if (storyPosition === 7){
     poof.style.display = 'none';
+  }
+  if (storyPosition === 13){
+    wizRock.style.display = "none"
+    gameModal.style.display = 'block';
+    storyCarousel.style.display = 'none';
   }
 })
 document.getElementById('prev').addEventListener('click', function() {
@@ -78,17 +84,20 @@ function moveToPrevStory() {
 }
 
 // Start first game
+const gameModal = document.querySelector('#gameModal')
 const gameBtn1 = document.querySelector('#gameBtn1')
 const game1 = document.querySelector('.gameStart1')
 gameBtn1.addEventListener('click', (evt) => {
-    rock.style.display = "none";
     game1.style.display = 'block';
+    gameModal.style.display = 'none';
+    rock.style.top = '500px';
+    // rock.style.display = 'none';
     setTimeout(() => {
         game1.style.display = 'none';
       }, 1500)
     gameBtn1.style.display = "none";
     document.body.style.backgroundImage = `url(${backgroundImages[1]})`;
-    document.body.style.backgroundColor = 'rgba(34, 30, 72, 1)';
+    document.body.style.backgroundColor = 'rgba(32, 30, 64, 1)';
     setTimeout(() => {
         fireflies.style.display = 'block';
       }, Math.floor(Math.random() * (4000-1500) + 1500))

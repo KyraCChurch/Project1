@@ -58,14 +58,6 @@ h1{
     top: 50%;
     left: 20%;
 }
-#gameBtn1{
-    /* display: none; */
-    color: rgba(50, 178, 174, 1);
-    border-radius: 3px;
-    position:absolute; 
-    font-size: 30px;
-    font-family: 'Poor Story', cursive;
-}
 .gameStart1{
     display: none;
 }
@@ -116,7 +108,7 @@ h1{
   .story--hidden{
     display: none;
   }
-  .storyCarousel .story--visible{
+ .story--visible{
     display: block;
   }
   
@@ -149,4 +141,45 @@ h1{
       text-align: center;
     font-family: 'Yusei Magic', sans-serif;
   }
+
+  /* Game Modal */
+  #gameModal{
+    background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+  }
+  #modalText {
+	background-color: rgba(141, 168, 183, 0.96);
+    color: white;
+    height: 350px;
+    width: 550px;
+    border-radius: 2px;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    line-height: 120%;
+    font-size: 30px;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+p{
+    color: rgba(50, 178, 174, 1);
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke: 1px Black;
+    font-family: 'Poor Story', cursive;
+}
+#gameBtn1{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Poor Story', cursive;
+}
+
  
