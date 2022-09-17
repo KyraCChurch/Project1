@@ -86,36 +86,62 @@ function moveToPrevStory() {
 // Start first game
 const gameModal = document.querySelector('#gameModal')
 const gameBtn1 = document.querySelector('#gameBtn1')
-const game1 = document.querySelector('.gameStart1')
+const game1 = document.querySelector('.gameStart')
 gameBtn1.addEventListener('click', (evt) => {
     game1.style.display = 'block';
     gameModal.style.display = 'none';
     rock.style.top = '500px';
     // rock.style.display = 'none';
     setTimeout(() => {
-        game1.style.display = 'none';
+    game1.style.display = 'none';
       }, 1500)
     gameBtn1.style.display = "none";
     document.body.style.backgroundImage = `url(${backgroundImages[1]})`;
     document.body.style.backgroundColor = 'rgba(32, 30, 64, 1)';
-    setTimeout(() => {
-        fireflies.style.display = 'block';
-      }, Math.floor(Math.random() * (4000-1500) + 1500))
+    makeBox()
     });
 // First game 
-const fireflies = document.querySelector('#firefly')
-const multiples = document.querySelector('.fireflies')
-fireflies.addEventListener('click', (evt) => {
-    fireflies.style.display = 'none';
-    for (let i=0;i<multiples.length;i++){
-    setTimeout(function(){ 
-        document.getElementById('firefly').style.display ='block';
-    }, Math.floor(Math.random() * (4000-1000) + 1000));
-    setTimeout(() => {
-        fireflies.style.display = 'none';
-      }, 4500)
-    }
-})
+var clickedTime; 
+var createdTime; 
+var reactionTime; 
+		
+			function makeBox() {
+					var time=Math.random();
+					time=time*3000;
+				
+				setTimeout(function() {
+						
+					var top= Math.random();
+						top= top*300;
+					var left= Math.random();
+						left= left*500; 
+						
+					document.getElementById("fireflies").style.top = top + "px";
+					document.getElementById("fireflies").style.left = left + "px"; 
+				
+					document.getElementById("fireflies").style.display="block";
+					
+					createdTime=Date.now();
+					
+				}, time); 
+			
+			}
+			
+			document.getElementById("fireflies").onclick=function() {
+			
+				clickedTime=Date.now();
+				
+				reactionTime=(clickedTime-createdTime)/1000;
+				
+				this.style.display="none";
+				
+				makeBox();
+				
+				
+			}
+			
+			makeBox(); 
+
 
     
 

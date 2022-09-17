@@ -58,14 +58,7 @@ h1{
     top: 50%;
     left: 20%;
 }
-.gameStart1{
-    display: none;
-}
-#firefly{
-    background-color: transparent;
-    border-radius: 150px;
-    display: block;
-    position: absolute;
+.gameStart{
     display: none;
 }
 .death{
@@ -94,10 +87,6 @@ h1{
 #prev{
     color: rgba(50, 178, 174, 1);
     border-radius: 3px;
-    /* position:absolute;
-    margin-left:-50px;
-    left:40%;
-    bottom:40px; */
     font-size: 40px;
     font-family: 'Poor Story', cursive;
 }
@@ -184,5 +173,11 @@ p{
     font-size: 30px;
     font-family: 'Poor Story', cursive;
 }
-
- 
+/* Firefly Game */
+#fireflies {
+    width: 200px;
+    height: 200px;
+    background: url("https://i.im.ge/2022/09/14/1oTspF.Untitled-09-13-2022-05-28-44.png");
+    display: none;
+    position: relative; 
+}

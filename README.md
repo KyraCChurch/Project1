@@ -8,12 +8,12 @@ When creating this game a big way for me to test my code was by using console.lo
 I feel as though this project allowed me to feel a lot more comfortable and understanding of things such as event listeners. set timeouts, and making a carousel.
 
 How to play:
-Follow rocks story as he summons a wizard then asks you to go on an adventure with his. When you say "Lets Go" you will be on an adventure catching fireflies with rock. To catch the firelfies you need to click on them as fast as you can, before they disappear. 
-
-
+Follow rocks story as he summons a wizard then asks you to go on an adventure with his. When you say "Lets Go" you will be on an adventure catching fireflies with rock. To catch the firelfies you need to click on them before they disappear. 
 
 Technologies: 
 Set Timeout
+Flexbox
+math.random
 
 Features: 
 Restart Button
@@ -24,9 +24,12 @@ Recources:
 Story carousel: https://www.youtube.com/watch?v=gor5BvT2z88 
 Story carousel: Corgi Carousel Classwork
 Modal: Modal Practice Classwork
+Fireflies appear at random in random spot: https://codepen.io/cliff538/pen/GRYXqV
 
-Challenges: 
-Prev button
-Restart Button 
+Solved Challenges: 
+Story Carousel responding to next button. 
+
+Unsolved Challenges:
+
 
 
