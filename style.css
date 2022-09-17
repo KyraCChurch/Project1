@@ -38,7 +38,7 @@ h1{
     transform-origin: center bottom;
     position: fixed; 
     top: 40%;
-    left: 35%;
+    left: 40%;
   }
   #wizardRockPic{
     display: none;
@@ -84,24 +84,27 @@ h1{
     font-family: 'Poor Story', cursive;
     display: none;
 }
-#next{
-    color: rgba(50, 178, 174, 1);
-    border-radius: 3px;
-    position:absolute; 
-    margin-left:-50px;
-    left:60%;
-    bottom:40px;
-    font-size: 30px;
-    font-family: 'Poor Story', cursive;
+.storyBtns{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-end;
+    height: 750px;
 }
 #prev{
     color: rgba(50, 178, 174, 1);
     border-radius: 3px;
-    position:absolute; 
+    /* position:absolute;
     margin-left:-50px;
     left:40%;
-    bottom:40px;
-    font-size: 30px;
+    bottom:40px; */
+    font-size: 40px;
+    font-family: 'Poor Story', cursive;
+}
+#next{
+    color: rgba(50, 178, 174, 1);
+    border-radius: 3px;
+    font-size: 40px;
     font-family: 'Poor Story', cursive;
 }
   .story,
