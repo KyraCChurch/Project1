@@ -98,14 +98,15 @@ gameBtn1.addEventListener('click', (evt) => {
     gameBtn1.style.display = "none";
     document.body.style.backgroundImage = `url(${backgroundImages[1]})`;
     document.body.style.backgroundColor = 'rgba(32, 30, 64, 1)';
-    makeBox()
+    game()
     });
 // First game 
 var clickedTime; 
 var createdTime; 
 var reactionTime; 
-		
-			function makeBox() {
+const fireflies = document.getElementById("fireflies")	
+function game() {
+			function startFlies() {
 					var time=Math.random();
 					time=time*3000;
 				
@@ -116,10 +117,10 @@ var reactionTime;
 					var left= Math.random();
 						left= left*500; 
 						
-					document.getElementById("fireflies").style.top = top + "px";
-					document.getElementById("fireflies").style.left = left + "px"; 
+					fireflies.style.top = top + "px";
+					fireflies.style.left = left + "px"; 
 				
-					document.getElementById("fireflies").style.display="block";
+					fireflies.style.display="block";
 					
 					createdTime=Date.now();
 					
@@ -127,20 +128,25 @@ var reactionTime;
 			
 			}
 			
-			document.getElementById("fireflies").onclick=function() {
+			fireflies.onclick=function() {
 			
 				clickedTime=Date.now();
 				
 				reactionTime=(clickedTime-createdTime)/1000;
+
+        if (reactionTime >= 2000){
+
+        }
 				
 				this.style.display="none";
 				
-				makeBox();
+				startFlies();
 				
 				
 			}
 			
-			makeBox(); 
+			startFlies(); 
+}
 
 
     
