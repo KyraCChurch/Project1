@@ -181,3 +181,22 @@ p{
     display: none;
     position: relative; 
 }
+#death {
+    color: rgba(50, 178, 174, 1);
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke: 1px Black;
+    font-family: 'Poor Story', cursive;
+    background: rgba(50, 178, 174, 1);
+    border-radius: 5px;
+    display: none;
+}
+#rockDeath{
+    margin: 20px;
+    width: 400px;
+    transform-origin: center bottom;
+    position: fixed; 
+    top: 60%;
+    left: 40%;
+    display: none;
+}

@@ -18,7 +18,6 @@ math.random
 Features: 
 Restart Button
 Next and Prev buttons
-Custom characters
 
 Recources: 
 Story carousel: https://www.youtube.com/watch?v=gor5BvT2z88 
@@ -28,8 +27,10 @@ Fireflies appear at random in random spot: https://codepen.io/cliff538/pen/GRYXq
 
 Solved Challenges: 
 Story Carousel responding to next button. 
+Making the fireflies appear at random.
 
 Unsolved Challenges:
-
+Restart button
+Prev Button 
 
 

@@ -1,7 +1,8 @@
 //general
 const backgroundImages = [
     "https://i.im.ge/2022/09/11/O4cgNy.210fb8977200036036103eceb02fa4ae.jpg",
-    "https://cdna.artstation.com/p/assets/images/images/015/690/214/original/daniel-gianino-fairy-forest1.gif?1549276717"
+    "https://cdna.artstation.com/p/assets/images/images/015/690/214/original/daniel-gianino-fairy-forest1.gif?1549276717",
+    "https://steamuserimages-a.akamaihd.net/ugc/100603690274632772/7538841421DEA4DA2E4F1DFE1EA1D1C2D0C0632E/"
 ]
 const rock = document.querySelector('.rock');
 const wizRock = document.querySelector('#wizardRockPic')
@@ -11,8 +12,7 @@ restart.addEventListener('click', (evt) => {
     startPage.style.display = "block";
     document.body.style.backgroundImage = `url(${backgroundImages[0]})`;
     rock.style.display = 'none';
-    // storyPt1.style.display = "none";
-    // game1.style.display = 'none';
+    fireflies.style.display = "none";
 });
 const deathScreen = document.querySelector('.death');
 //Start Button
@@ -106,48 +106,56 @@ var createdTime;
 var reactionTime; 
 const fireflies = document.getElementById("fireflies")	
 function game() {
-			function startFlies() {
-					var time=Math.random();
-					time=time*3000;
-				
-				setTimeout(function() {
-						
-					var top= Math.random();
-						top= top*300;
-					var left= Math.random();
-						left= left*500; 
-						
-					fireflies.style.top = top + "px";
-					fireflies.style.left = left + "px"; 
-				
-					fireflies.style.display="block";
-					
-					createdTime=Date.now();
-					
-				}, time); 
-			
-			}
-			
-			fireflies.onclick=function() {
-			
-				clickedTime=Date.now();
-				
-				reactionTime=(clickedTime-createdTime)/1000;
+  function startFlies() {
+    var time=Math.random();
+    time=time*3000;
 
-        if (reactionTime >= 2000){
+  setTimeout(function() {
+      
+    var top= Math.random();
+      top= top*300;
+    var left= Math.random();
+      left= left*500; 
+      
+    fireflies.style.top = top + "px";
+    fireflies.style.left = left + "px"; 
+  
+    fireflies.style.display="block";
+    
+    createdTime=Date.now();
+    
+  }, time); 
 
-        }
-				
-				this.style.display="none";
-				
-				startFlies();
-				
-				
-			}
-			
-			startFlies(); 
 }
 
+fireflies.onclick=function() {
+
+  clickedTime=Date.now();
+  
+  reactionTime=(clickedTime-createdTime)/1000;
+
+  if (createdTime >= 2000){
+    death();
+  }
+  
+  this.style.display="none";
+  
+  startFlies();
+  
+}
+
+startFlies(); 
+}
+
+function death(){
+  console.log('hi');
+  fireflies.style.display = "none";
+  rock.style.display = "none";
+  document.body.style.backgroundImage = `url(${backgroundImages[2]})`;
+  document.body.style.backgroundColor = 'rgba(0, 0, 6, 1)';
+  document.getElementById("death").style.display = "block";
+  document.getElementById('rockDeath').style.display = 'block';
+}
 
     
 
