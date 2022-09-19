@@ -157,6 +157,12 @@ function death(){
   document.getElementById('rockDeath').style.display = 'block';
 }
 
+function win(){
+  document.getElementsByClassName("win").style.display = "block"
+  document.body.style.backgroundImage = `url(${backgroundImages[0]})`;
+  document.body.style.backgroundColor = 'rgb(216, 219, 184)';
+}
+
     
 
 
