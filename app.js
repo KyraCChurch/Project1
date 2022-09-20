@@ -10,10 +10,18 @@ const restart = document.querySelector('.reset');
 const poof = document.querySelector('#poof')
 restart.addEventListener('click', (evt) => {
     startPage.style.display = "block";
+    fireflies.style.display = "none";
     document.body.style.backgroundImage = `url(${backgroundImages[0]})`;
     rock.style.display = 'none';
-    fireflies.style.display = "none";
-});
+    wizRock.style.display = 'none';
+    storyPt1.style.display = 'none';
+    storyPosition = 0;
+    document.getElementById("death").style.display = "none";
+    document.getElementById('rockDeath').style.display = 'none';
+  document.querySelector(".win").style.display = "none";
+  document.body.style.backgroundColor = 'rgb(216, 219, 184)';
+})
+
 const deathScreen = document.querySelector('.death');
 //Start Button
 const startBtn = document.querySelector('#start');
@@ -25,7 +33,7 @@ startBtn.addEventListener('click', (evt) => {
     storyPt1.style.display = "block";
     document.body.style.backgroundImage = `url(${backgroundImages[0]})`;
     rock.style.display = 'block';
-})
+});
 
 // Story 
 const storyPt1 = document.querySelector('.storyStart');
@@ -91,7 +99,6 @@ gameBtn1.addEventListener('click', (evt) => {
     game1.style.display = 'block';
     gameModal.style.display = 'none';
     rock.style.top = '500px';
-    // rock.style.display = 'none';
     setTimeout(() => {
     game1.style.display = 'none';
       }, 1500)
@@ -100,11 +107,12 @@ gameBtn1.addEventListener('click', (evt) => {
     document.body.style.backgroundColor = 'rgba(32, 30, 64, 1)';
     game()
     });
-// First game 
+// Game 
 var clickedTime; 
 var createdTime; 
 var reactionTime; 
 const fireflies = document.getElementById("fireflies")	
+
 function game() {
   function startFlies() {
     var time=Math.random();
@@ -132,10 +140,14 @@ fireflies.onclick=function() {
 
   clickedTime=Date.now();
   
-  reactionTime=(clickedTime-createdTime)/1000;
+  reactionTime=(clickedTime-createdTime);
 
-  if (createdTime >= 2000){
+  if (reactionTime >= 2000){
     death();
+    return;
+  } else{
+    win();
+    return;
   }
   
   this.style.display="none";
@@ -148,22 +160,19 @@ startFlies();
 }
 
 function death(){
-  console.log('hi');
-  fireflies.style.display = "none";
   rock.style.display = "none";
   document.body.style.backgroundImage = `url(${backgroundImages[2]})`;
   document.body.style.backgroundColor = 'rgba(0, 0, 6, 1)';
   document.getElementById("death").style.display = "block";
   document.getElementById('rockDeath').style.display = 'block';
+  fireflies.style.display = "none";
 }
 
 function win(){
-  document.getElementsByClassName("win").style.display = "block"
+  document.querySelector(".win").style.display = "block"
   document.body.style.backgroundImage = `url(${backgroundImages[0]})`;
   document.body.style.backgroundColor = 'rgb(216, 219, 184)';
+  fireflies.style.display = "none";
 }
 
     
-
-
-

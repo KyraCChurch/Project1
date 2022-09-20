@@ -28,9 +28,16 @@ Fireflies appear at random in random spot: https://codepen.io/cliff538/pen/GRYXq
 Solved Challenges: 
 Story Carousel responding to next button. 
 Making the fireflies appear at random.
+Making fireflies appear on random parts of screen at random time.
+Making wizard appear mid story.
+Fireflies stop appearing after game is finished or restarted
 
-Unsolved Challenges:
-Restart button
-Prev Button 
+Unsolved Challenges/ didn't get to:
+Prev Button and restart goes to next slide before going back
+Make player catch 5 fireflies before win screen
+Scoreboard (0/5 fireflies caught)
+Story does not start back up if restart is clicked after story finished.
+
+
 
 
