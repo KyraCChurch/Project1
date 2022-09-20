@@ -13,6 +13,11 @@ body{
     border-radius: 3px; 
     font-size: 20px;
     font-family: 'Poor Story', cursive;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-end;
+    height: 35px;
 }
 h1{
     color: rgba(50, 178, 174, 1);
@@ -51,12 +56,11 @@ h1{
 }
 #rockDeath{
     margin: 20px;
-    /* width: 400px; */
     transform-origin: center bottom;
     position: fixed; 
     top: 60%;
     left: 40%;
-    /* display: none; */
+    display: none;
 }
 #poof{
     display: none;
@@ -132,6 +136,7 @@ h1{
       font-family: 'Rock Salt', cursive;
       text-align: center;
   }
+      
   .wizardDialog{
     background: rgba(109, 30, 151, 0.8);
       color: white;

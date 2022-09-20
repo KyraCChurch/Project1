@@ -5,19 +5,15 @@ I made this my game because I like action story games so I wanted to try creatin
 
 When creating this game a big way for me to test my code was by using console.log('hi'). This was used at any point where I had an event listener so that I knew I could continue. 
 
-I feel as though this project allowed me to feel a lot more comfortable and understanding of things such as event listeners. set timeouts, and making a carousel.
+I feel as though this project allowed me to feel a lot more comfortable and understanding of things such as event listeners, set timeouts, and making a carousel.
 
 How to play:
-Follow rocks story as he summons a wizard then asks you to go on an adventure with his. When you say "Lets Go" you will be on an adventure catching fireflies with rock. To catch the firelfies you need to click on them before they disappear. 
+Follow rocks story as he summons a wizard then asks you to go on an adventure with him. When you say "Lets Go" you will go on an adventure catching fireflies with rock. To catch the firelfies you need to click on them before 2 seconds have passed. 
 
 Technologies: 
 Set Timeout
 Flexbox
 math.random
-
-Features: 
-Restart Button
-Next and Prev buttons
 
 Recources: 
 Story carousel: https://www.youtube.com/watch?v=gor5BvT2z88 
@@ -27,16 +23,16 @@ Fireflies appear at random in random spot: https://codepen.io/cliff538/pen/GRYXq
 
 Solved Challenges: 
 Story Carousel responding to next button. 
-Making the fireflies appear at random.
 Making fireflies appear on random parts of screen at random time.
 Making wizard appear mid story.
-Fireflies stop appearing after game is finished or restarted
+Fireflies stop appearing after mini game is finished or restarted
 
 Unsolved Challenges/ didn't get to:
-Prev Button and restart goes to next slide before going back
+Prev Button goes to next slide before going backwards.
 Make player catch 5 fireflies before win screen
 Scoreboard (0/5 fireflies caught)
-Story does not start back up if restart is clicked after story finished.
+Story does not start back up if restarted.
+Flexbox on buttons move stuff around sometimes.
 
 
 

@@ -10,19 +10,19 @@ const restart = document.querySelector('.reset');
 const poof = document.querySelector('#poof')
 restart.addEventListener('click', (evt) => {
     startPage.style.display = "block";
+    let storyPosition = 0;
     fireflies.style.display = "none";
     document.body.style.backgroundImage = `url(${backgroundImages[0]})`;
     rock.style.display = 'none';
     wizRock.style.display = 'none';
     storyPt1.style.display = 'none';
-    storyPosition = 0;
     document.getElementById("death").style.display = "none";
     document.getElementById('rockDeath').style.display = 'none';
   document.querySelector(".win").style.display = "none";
   document.body.style.backgroundColor = 'rgb(216, 219, 184)';
 })
 
-const deathScreen = document.querySelector('.death');
+// const deathScreen = document.querySelector('.death');
 //Start Button
 const startBtn = document.querySelector('#start');
 const startPage = document.querySelector('.startPg');
@@ -141,7 +141,7 @@ fireflies.onclick=function() {
   clickedTime=Date.now();
   
   reactionTime=(clickedTime-createdTime);
-
+  
   if (reactionTime >= 2000){
     death();
     return;
@@ -149,10 +149,6 @@ fireflies.onclick=function() {
     win();
     return;
   }
-  
-  this.style.display="none";
-  
-  startFlies();
   
 }
 
